@@ -1,0 +1,34 @@
+{
+  "registros": [
+    {
+      "email": "pepepepe@pepepe.com",
+      "nit": "pepepepepe",
+      "terms": true,
+      "id": 1
+    },
+    {
+      "email": "popo@popo.com",
+      "nit": "popo",
+      "terms": true,
+      "id": 2
+    },
+    {
+      "email": "sdsdsds@sdsd.com",
+      "nit": "lklklklklklklk",
+      "terms": true,
+      "id": 3
+    },
+    {
+      "email": "lalala@lalala.com",
+      "nit": "yiyyyyi",
+      "terms": true,
+      "id": 4
+    },
+    {
+      "email": "ggtfgfgfgfg@ssddfd.co",
+      "nit": "ffdfgfdfdfdfd",
+      "terms": true,
+      "id": 5
+    }
+  ]
+}

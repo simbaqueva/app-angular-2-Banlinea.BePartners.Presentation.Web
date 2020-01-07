@@ -1,0 +1,58 @@
+:host {
+  background-color: #fff;
+  color: #007FF8;
+  display: block;
+  height: auto;
+  padding: 0;
+  position: relative;
+}
+header{ border-bottom: solid 2px rgba(0,0,0,0.1);}
+
+.logo {
+  position: relative;
+  display: inline;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  line-height: 2;
+}
+
+.more {
+  background: url("./assets/svg/more.svg");
+  float: right;
+  height: 24px;
+  margin-top: 12px;
+  width: 24px;
+}
+
+nav{
+  text-align: right;
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+nav a {
+  color: #007FF8;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-right: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+nav a.router-link-active {
+  color: #ddd;
+}
+.updrl{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav a.bootoms{
+  border: solid 1px #007FF8;
+  padding: 14px 30px;
+  border-radius: 18px;
+}

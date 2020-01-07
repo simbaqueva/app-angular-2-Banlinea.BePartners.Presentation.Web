@@ -1,0 +1,68 @@
+{
+  "registros": [
+    {
+      "email": "pepepepe@pepepe.com",
+      "nit": "pepepepepe",
+      "terms": true,
+      "id": 1
+    },
+    {
+      "email": "popo@popo.com",
+      "nit": "popo",
+      "terms": true,
+      "id": 2
+    },
+    {
+      "email": "sdsdsds@sdsd.com",
+      "nit": "lklklklklklklk",
+      "terms": true,
+      "id": 3
+    },
+    {
+      "email": "lalala@lalala.com",
+      "nit": "yiyyyyi",
+      "terms": true,
+      "id": 4
+    },
+    {
+      "email": "ggtfgfgfgfg@ssddfd.co",
+      "nit": "ffdfgfdfdfdfd",
+      "terms": true,
+      "id": 5
+    },
+    {
+      "email": "pepew@sdsds.com",
+      "nit": "rererererere",
+      "terms": true,
+      "id": 6
+    },
+    {
+      "email": "fvfvfv@sds.com",
+      "nit": "555555555-5",
+      "terms": true,
+      "id": 7
+    },
+    {
+      "email": "dccdc@ede.com",
+      "nit": "cddcc",
+      "terms": true,
+      "id": 8
+    },
+    {
+      "email": "fdggfg@sffd.com",
+      "nit": "dgdggdg",
+      "terms": true,
+      "pass": "gfgfgf",
+      "eqpass": "fgfgh",
+      "id": 9
+    },
+    {
+      "email": "jujuj@eded.co",
+      "nit": "747474747",
+      "terms": true,
+      "pass": "7uy7y7u",
+      "eqpass": "u7u7u7",
+      "id": 10
+    }
+  ]
+}

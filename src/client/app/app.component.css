@@ -1,0 +1,6 @@
+/* line 1, app.component.scss */
+:host {
+  flex: 1 1 100%;
+  display: flex;
+  flex-flow: column;
+}

@@ -1,0 +1,8 @@
+<section class="container subcontent">
+<h3>GitHub Browser</h3>
+
+<input type="text" #repoName placeholder="Search Github Orgs">
+<button (click)="searchForOrg(repoName.value)">Search Orgs</button>
+
+<router-outlet></router-outlet>
+</section>

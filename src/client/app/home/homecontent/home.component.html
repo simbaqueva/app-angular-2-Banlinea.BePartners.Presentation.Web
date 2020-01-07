@@ -1,0 +1,56 @@
+<section class="container subcontent">
+  <section class="row">
+    <section class="col-sm-12 col-md-8">
+      <section class="block c-blue hind light">
+        <article class="f-44 text-title">
+          Se parte de la red de empresarial más grande y conoce información de miles <span class="c-blueo">de empresas con las que puedes hacer negocios</span>
+        </article>
+        <article class="f-18 c-gray space4">Escribe el nombre o nit de la empresa que quieres consultar</article>
+        <form class="form-searchs" (submit)="addName()">
+          <section class="input-group">
+            <input  [(ngModel)]="newName" name="newName" placeholder="Nombre o Nit de la empresa" type="text" class="form-control" #searchTerm (keyup)="performSearch(searchTerm)">
+            <span class="input-group-btn">
+                  <button type="submit" class="btn btn-auto btn-secondary padd-in bots-search"><span class="c-orange"><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                  </span>
+          </section>
+        </form>
+        <section class="space6">
+          <img src="../../../assets/images/by.png" alt="">
+        </section>
+        <ul style="display:block;">
+          <li *ngFor="let name of names">
+            {{name}}
+          </li>
+        </ul>
+        <section class="row">
+        <section *ngFor="let g of giphies" class="col-sm-12 col-md-4" style="display: block;">
+                <img src="{{g.images.downsized_medium.url}}">
+        </section>
+        </section>
+      </section>
+    </section>
+    <section class="col-sm-12 col-md-4">
+      <home-homereg></home-homereg>
+    </section>
+  </section>
+  <section class="row space6 medium c-blue">
+    <section class="col-sm-12 col-md-4">
+      <article class="nums f-80">
+        <span>620</span>
+        <span class="f-12 c-gray">OFERTAS</span>
+      </article>
+    </section>
+    <section class="col-sm-12 col-md-4">
+      <article class="nums f-80">
+        <span>400</span>
+        <span class="f-12 c-gray">EMPRESAS REGISTRADAS</span>
+      </article>
+    </section>
+    <section class="col-sm-12 col-md-4">
+      <article class="nums f-80">
+        <span>206</span>
+        <span class="f-12 c-gray">TUDES DE SERVICIOS</span>
+      </article>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,81 @@
+<section class="form-home ml-auto">
+  <section class="text-form f-24 c-blueo">Contáctate con más empresas <span class="c-blue">que buscan hacer grandes negocios.</span></section>
+
+<form (ngSubmit)="submitForm(homeregForm)" [formGroup]="homeregForm" novalidate class="f-label validate" >
+  <section class="form-content">
+    <section class="form-group" [ngClass]="{'has-danger':homeregForm.controls.email.errors?.email}">
+      <label class="form-control-label">Correo del representante legal:</label>
+      <input type="email" formControlName="email" class="form-control form-control-danger validate[required,custom[email],[minSize[4],[maxSize[50]]" placeholder="Correo del representante." minlength="4" maxlength="50" required data-errormessage-value-missing="Email es requerido!" data-errormessage-custom-error="Ejemplo: example@example.com">
+       <small class="form-control-feedback" *ngIf="homeregForm.controls.email.errors?.email"></small>
+    </section>
+    <section class="form-group" [ngClass]="{'has-danger':homeregForm.controls.nit.errors?.rangeLength}">
+       <label class="form-control-label">Nit o nombre de la empresa:</label>
+      <input type="text" formControlName="nit" class="form-control form-control-danger validate[required,[minSize[4],[maxSize[24]] onlynumber" placeholder="Nit o Nombre de la empresa." minlength="4" maxlength="24" required>
+       <small class="form-control-feedback" *ngIf="homeregForm.controls.nit.errors?.rangeLength"></small>
+    </section>
+      <section class="form-group r-botom">
+        <label class="btn form-control-label">
+          <input type="checkbox" name='terms' formControlName="terms" id="terms" value="si" required>
+          <i class="fa fa-circle-thin f-26"></i><i class="fa fa-circle fa-1x"></i>
+          <span class="f-12 c-gray"> Acepto </span> <a href="#" class="f-12 c-blue" data-toggle="modal" data-target="#flipFlop"> términos y condiciones</a>
+        </label>
+      </section>
+
+
+    <section class="form-submit">
+      <button [disabled]="!homeregForm.valid" type="submit" class="btn btn-form space6">REGISTRAR MI EMPRESA</button>
+      <a class="links space6 f-12 hind medium" href="#">¿NECESITA AYUDA?</a>
+    </section>
+  </section>
+</form>
+<pre>{{Response}}</pre>
+<section class="form-value" style="display: none;">
+  <section>
+    <ul>
+      <li *ngFor="let register of registers">
+        {{register.id}}
+      </li>
+    </ul>
+  </section>
+  Valor de los campos:
+  <pre>
+    {{homeregForm.value | json}}
+  </pre>
+  <p>
+    Status: {{homeregForm.status}}
+  </p>
+  <p>
+    Validación: {{homeregForm.valid}}
+  </p>
+  <p>El envio de formularoio se muestra en la consola.</p>
+</section>
+  <!-- modal terms -->
+  <section class="modal fade modal-terms" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <section class="modal-dialog modal-lg" role="document">
+      <section class="modal-content">
+        <section class="modal-header">
+          <section class="close-modals">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </section>
+          <section class="">
+            <h5 class="modal-title" id="exampleModalLabel">BePartners</h5>
+          </section>
+        </section>
+        <section class="modal-body">
+
+        </section>
+        <section class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCELAR</button>
+          <button type="button" class="btn btn-primary">ACEPTAR</button>
+        </section>
+      </section>
+    </section>
+  </section>
+
+
+
+
+
+</section>

@@ -1,0 +1,438 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700");
+/* Reset */
+/* line 5, main.scss */
+html, body, div, section, button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+}
+
+/* line 14, main.scss */
+html {
+  line-height: 1;
+}
+
+/* line 18, main.scss */
+body {
+  line-height: 1;
+  background-color: #f9fafa;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/images/fondo-home.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 32, main.scss */
+img {
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+/* reset bootstrap */
+/* line 41, main.scss */
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 46, main.scss */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/* line 51, main.scss */
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: normal;
+  height: auto;
+  width: 300px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 18px 12px;
+  font-size: 14px;
+  border-radius: 16px;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+/* line 52, main.scss */
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0px rgba(2, 117, 216, 0);
+}
+
+/* line 78, main.scss */
+.btn-auto {
+  display: inline-block;
+  font-weight: normal;
+  line-height: normal;
+  height: auto;
+  width: 300px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 18px 12px;
+  font-size: 14px;
+  border-radius: 16px;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+/* fin reset bootstrap/
+
+/* Box-sizing border-box */
+/* line 105, main.scss */
+* {
+  box-sizing: border-box;
+}
+/* line 107, main.scss */
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+/* line 112, main.scss */
+p {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/* line 120, main.scss */
+ul {
+  margin: 0px 0 0;
+  padding: 0 0 0 0px;
+}
+
+/* line 125, main.scss */
+li {
+  font-weight: 400;
+  /*margin-top: 4px;*/
+}
+
+/* line 130, main.scss */
+.form-control {
+  border: 1px solid #D2D3D4;
+  font-size: 12px;
+  height: 40px;
+  outline: none;
+  border-radius: 14px;
+  padding: 22px 10px;
+}
+
+/* line 139, main.scss */
+textarea.form-control {
+  padding: 10px;
+  min-height: 60px;
+}
+
+/* CLASES GENERICAS (SE PUEDEN USAR EN TODA LA APLICACI├ôN SIN IMPORTAR EL COMPONENTE) */
+/* line 146, main.scss */
+.hind {
+  font-family: 'Hind', sans-serif;
+}
+
+/* line 150, main.scss */
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 154, main.scss */
+.light {
+  font-weight: lighter;
+}
+
+/* line 158, main.scss */
+.regular {
+  font-weight: 400;
+}
+
+/* line 162, main.scss */
+.medium {
+  font-weight: 500;
+}
+
+/* line 166, main.scss */
+.semi-bold, .bold {
+  font-weight: 600;
+}
+
+/* line 170, main.scss */
+.f-12 {
+  font-size: 12px;
+}
+
+/* line 174, main.scss */
+.f-14 {
+  font-size: 14px;
+}
+
+/* line 178, main.scss */
+.f-16 {
+  font-size: 16px;
+}
+
+/* line 182, main.scss */
+.f-18 {
+  font-size: 18px;
+}
+
+/* line 186, main.scss */
+.f-20 {
+  font-size: 20px;
+}
+
+/* line 190, main.scss */
+.f-22 {
+  font-size: 22px;
+}
+
+/* line 194, main.scss */
+.f-24 {
+  font-size: 24px;
+}
+
+/* line 198, main.scss */
+.f-26 {
+  font-size: 26px;
+}
+
+/* line 202, main.scss */
+.f-28 {
+  font-size: 28px;
+}
+
+/* line 206, main.scss */
+.f-30 {
+  font-size: 30px;
+}
+
+/* line 210, main.scss */
+.f-44 {
+  font-size: 44px;
+}
+
+/* line 214, main.scss */
+.f-80 {
+  font-size: 80px;
+}
+
+/* line 218, main.scss */
+.c-blue {
+  color: #1F80F3;
+}
+
+/* line 222, main.scss */
+.c-blueo {
+  color: #003161;
+}
+
+/* line 226, main.scss */
+.c-gray {
+  color: #6B717E;
+}
+
+/* line 230, main.scss */
+.c-orange {
+  color: #F9B53C;
+}
+
+/* line 234, main.scss */
+.subcontent {
+  position: relative;
+  padding: 2% 0;
+}
+
+/* line 239, main.scss */
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(250, 250, 245, 0.8);
+}
+/* line 245, main.scss */
+.loading .imag {
+  width: 100%;
+  text-align: center;
+  margin-top: 6%;
+}
+/* line 250, main.scss */
+.loading .text-load {
+  position: relative;
+  width: 100%;
+  color: #007FF8;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 259, main.scss */
+.pdrl-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 264, main.scss */
+form.f-label {
+  color: #6B717E;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* line 272, main.scss */
+.r-botom input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+/* line 276, main.scss */
+.r-botom label {
+  display: inline-block;
+  padding: 6px 0px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid #c8c8c8;
+  border-radius: 3px;
+  color: #c8c8c8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 277, main.scss */
+.r-botom label span, .r-botom label a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+}
+/* line 284, main.scss */
+.r-botom label input[type="checkbox"] ~ i.fa.fa-circle-thin {
+  color: #6B717E;
+  display: inline;
+}
+/* line 288, main.scss */
+.r-botom label input[type="checkbox"] ~ i.fa.fa-circle {
+  display: none;
+}
+/* line 293, main.scss */
+.r-botom label input[type="checkbox"]:checked ~ i.fa.fa-circle-thin {
+  display: inline;
+}
+/* line 296, main.scss */
+.r-botom label input[type="checkbox"]:checked ~ i.fa.fa-circle {
+  color: #0080F8;
+  display: inline;
+  position: absolute;
+  left: 5px;
+  right: 0;
+  line-height: 26px;
+  margin: 0 auto;
+}
+/* line 307, main.scss */
+.r-botom label:hover input[type="checkbox"] ~ i.fa {
+  color: #0080F8;
+}
+
+/* line 332, main.scss */
+.space10 {
+  margin: 10% 0;
+}
+
+/* line 336, main.scss */
+.space6 {
+  margin: 6% 0;
+}
+
+/* line 340, main.scss */
+.space3 {
+  margin: 3% 0;
+}
+
+/* line 344, main.scss */
+.space4 {
+  padding: 4% 0;
+}
+
+/* line 349, main.scss */
+.subcontent .btn-form {
+  background: #0080F8;
+  border-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 354, main.scss */
+.subcontent .btn-form:hover {
+  opacity: .8;
+}
+/* line 358, main.scss */
+.subcontent .btn-auto {
+  width: auto;
+}
+/* line 361, main.scss */
+.subcontent .links {
+  text-align: center;
+  display: block;
+}
+
+/* line 367, main.scss */
+.padd-in {
+  padding: 0.5rem 1rem;
+}
+
+/* line 371, main.scss */
+.bots-search {
+  border: solid 1px #D2D3D4;
+  cursor: pointer;
+}
+
+/* line 377, main.scss */
+.form-control::-webkit-input-placeholder {
+  color: #ddd;
+}
+/* line 380, main.scss */
+.form-control:-moz-placeholder, .form-control::-moz-placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+/* line 384, main.scss */
+.form-control:-ms-input-placeholder {
+  color: #ddd;
+}
+
+/* FIN CLASES GENERICAS */

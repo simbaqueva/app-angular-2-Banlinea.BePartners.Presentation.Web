@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  padding: 0 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0 0 8px;
+}
+.text-title{
+  padding: 6% 10% 10px 0;
+}
+.form-searchs{
+  width: 66%;
+}
+.nums{
+  text-align: center;
+}
+.nums span{
+  display: block;
+}

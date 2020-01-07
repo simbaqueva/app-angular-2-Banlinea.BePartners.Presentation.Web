@@ -1,0 +1,174 @@
+:host {
+  display: block;
+  padding: 0 16px;
+}
+
+.container-registrer {
+  width: 360px;
+  padding: 5% 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo, .txt-logIn {
+  padding: 5% 0;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.txt-logIn {
+  width: 215px;
+  width: 258px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.logo .c-blueo, .txt-logIn .c-blueo {
+  color: #003161;
+}
+
+.logo .c-blue, .txt-logIn .c-blue {
+  color: #007FF8;
+}
+
+/*tabs*/
+.nav-tabs {
+  background-color: #F4F6F5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: none;
+}
+
+.nav-link {
+  font-family: 'Hind', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #007FF8;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+  width: 180px;
+  padding: 25px 0;
+  height: 70px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #F4F6F5 #F4F6F5 #fff;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #F4F6F5 #F4F6F5 #fff;
+}
+
+/*tab-content*/
+.tab-content {
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 1px #F4F6F5;
+  border-top: none;
+  height: 450px;
+}
+
+.tab-content>.active {
+  padding: 10px 0px;
+}
+
+/*formulario inicio sesion*/
+
+.form-container {
+  width: 265px;
+  margin: 0 auto;
+}
+
+.form-container label {
+  font-family: 'Hind', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.button-container {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.btn-logIn {
+  background-color: #0080F8;
+  border: none;
+  width: 235px;
+  height: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.links-help {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.links-help a {
+  font-family: 'Hind', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.links-help a:hover {
+
+}
+
+.c-bluec {
+  color: #0080F8;
+}
+
+.custom-controls-stacked {
+  text-align: center;
+  display: block;
+  width: 290px;
+}
+
+.custom-control-indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.custom-control-description {
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.container-by {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15% 0px;
+}
+
+.container-by span {
+  padding: 10px 5px;
+  display: block;
+  font-size: 13px;
+}
+
+.img-fluid {
+  height: auto;
+  width: auto;
+  max-width: none;
+}
+
+input {
+  border-radius: 10px;
+}

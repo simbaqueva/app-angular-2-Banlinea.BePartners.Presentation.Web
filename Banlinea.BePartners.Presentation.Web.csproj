@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8B5C820-A1A1-456E-B06B-FFF0DB4EDA0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Banlinea.BePartners.Presentation.Web</RootNamespace>
+    <AssemblyName>Banlinea.BePartners.Presentation.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="karma.conf.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include=".editorconfig" />
+    <Content Include="package.json" />
+    <Content Include="protractor.conf.js" />
+    <Content Include="README.md" />
+    <Content Include="src\client\app\about\about.component.css" />
+    <Content Include="src\client\app\about\about.component.html" />
+    <Content Include="src\client\app\app.component.css" />
+    <Content Include="src\client\app\app.component.html" />
+    <Content Include="src\client\app\home\home.component.css" />
+    <Content Include="src\client\app\home\home.component.html" />
+    <Content Include="src\client\app\shared\navbar\navbar.component.css" />
+    <Content Include="src\client\app\shared\navbar\navbar.component.html" />
+    <Content Include="src\client\app\shared\toolbar\toolbar.component.css" />
+    <Content Include="src\client\app\shared\toolbar\toolbar.component.html" />
+    <Content Include="src\client\assets\favicon\favicon-DEV.ico" />
+    <Content Include="src\client\assets\favicon\favicon-PROD.ico" />
+    <Content Include="src\client\assets\svg\more.svg" />
+    <Content Include="src\client\css\main.css" />
+    <Content Include="src\client\index.html" />
+    <Content Include="test-config.js" />
+    <Content Include="test-main.js" />
+    <Content Include="tools\.gitignore" />
+    <Content Include="tools\config\banner-256.txt" />
+    <Content Include="tools\config\banner.txt" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
+    <Content Include=".dockerignore" />
+    <Content Include=".travis.yml" />
+    <Content Include="appveyor.yml" />
+    <Content Include="docker-compose.production.yml" />
+    <Content Include="docker-compose.yml" />
+    <Content Include="LICENSE" />
+    <Content Include=".vscode\launch.json" />
+    <Content Include=".vscode\settings.json" />
+    <Content Include=".vscode\tasks.json" />
+    <Content Include="tools\config\project.tasks.json" />
+    <Content Include="tools\config\seed.tasks.json" />
+    <Content Include="tools\config\seed.tslint.json" />
+    <Content Include="tools\README.md" />
+    <Content Include="src\client\assets\data.json" />
+    <Content Include="src\client\tsconfig.json" />
+    <Content Include="src\e2e\tsconfig.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="yarn.lock" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="gulpfile.ts" />
+    <TypeScriptCompile Include="src\client\app\about\about-routing.module.ts" />
+    <TypeScriptCompile Include="src\client\app\about\about.component.spec.ts" />
+    <TypeScriptCompile Include="src\client\app\about\about.component.ts" />
+    <TypeScriptCompile Include="src\client\app\about\about.module.ts" />
+    <TypeScriptCompile Include="src\client\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\client\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="src\client\app\app.component.ts" />
+    <TypeScriptCompile Include="src\client\app\app.module.ts" />
+    <TypeScriptCompile Include="src\client\app\home\home-routing.module.ts" />
+    <TypeScriptCompile Include="src\client\app\home\home.component.spec.ts" />
+    <TypeScriptCompile Include="src\client\app\home\home.component.ts" />
+    <TypeScriptCompile Include="src\client\app\home\home.module.ts" />
+    <TypeScriptCompile Include="src\client\app\i18n.providers.ts" />
+    <TypeScriptCompile Include="src\client\app\main-prod.ts" />
+    <TypeScriptCompile Include="src\client\app\main.ts" />
+    <TypeScriptCompile Include="src\client\app\operators.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\config\env.config.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\name-list\index.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\name-list\name-list.service.spec.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\name-list\name-list.service.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\shared.module.ts" />
+    <TypeScriptCompile Include="src\client\app\shared\toolbar\toolbar.component.ts" />
+    <TypeScriptCompile Include="src\client\app\system-config.ts" />
+    <TypeScriptCompile Include="src\e2e\specs\about.component.e2e-spec.ts" />
+    <TypeScriptCompile Include="src\e2e\specs\app.component.e2e-spec.ts" />
+    <TypeScriptCompile Include="src\e2e\specs\home.component.e2e-spec.ts" />
+    <TypeScriptCompile Include="tools\config.ts" />
+    <TypeScriptCompile Include="tools\config\project.config.ts" />
+    <TypeScriptCompile Include="tools\config\seed.config.interfaces.ts" />
+    <TypeScriptCompile Include="tools\config\seed.config.ts" />
+    <TypeScriptCompile Include="tools\debug.ts" />
+    <TypeScriptCompile Include="tools\env\base.ts" />
+    <TypeScriptCompile Include="tools\env\dev.ts" />
+    <TypeScriptCompile Include="tools\env\env-config.interface.ts" />
+    <TypeScriptCompile Include="tools\env\prod.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\project\sample.package.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\autoprefixer.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\cssnano.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\express-history-api-fallback.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\istream.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\karma.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\merge-stream.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\open.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\operators.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\slash.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\systemjs-builder.d.ts" />
+    <TypeScriptCompile Include="tools\manual_typings\seed\tildify.d.ts" />
+    <TypeScriptCompile Include="tools\tasks\assets_task.ts" />
+    <TypeScriptCompile Include="tools\tasks\css_task.ts" />
+    <TypeScriptCompile Include="tools\tasks\project\sample.task.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.assets.dev.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.assets.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.bundle.rxjs.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.bundles.app.aot.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.bundles.app.rollup.aot.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.bundles.app.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.bundles.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.docs.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.html_css.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.index.dev.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.index.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.js.dev.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.js.e2e.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.js.prod.aot.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.js.prod.rollup.aot.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.js.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.js.test.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\build.tools.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\check.tools.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\check.versions.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clean.all.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clean.coverage.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clean.dev.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clean.e2e.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clean.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clean.tools.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\clear.files.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\compile.ahead.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\copy.prod.rollup.aot.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\copy.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\e2e.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\generate.manifest.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\karma.run.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\karma.run.with_coverage.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\karma.watch.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\minify.bundles.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\noop.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\print.banner.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\serve.coverage.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\serve.coverage.watch.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\serve.docs.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\server.prod.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\server.start.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\start.deving.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\transpile.bundles.rollup.aot.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\tslint.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\watch.dev.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\watch.e2e.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\watch.test.ts" />
+    <TypeScriptCompile Include="tools\tasks\seed\webdriver.ts" />
+    <TypeScriptCompile Include="tools\tasks\task.ts" />
+    <TypeScriptCompile Include="tools\tasks\typescript_task.ts" />
+    <TypeScriptCompile Include="tools\utils.ts" />
+    <TypeScriptCompile Include="tools\utils\project.utils.ts" />
+    <TypeScriptCompile Include="tools\utils\project\sample_util.ts" />
+    <TypeScriptCompile Include="tools\utils\seed.utils.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\clean.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\code_change_tools.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\karma.start.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\server.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\tasks_tools.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\template_locals.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\tsproject.ts" />
+    <TypeScriptCompile Include="tools\utils\seed\watch.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7389</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7389/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

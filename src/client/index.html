@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="<%= APP_BASE %>">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%= APP_TITLE %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="<%= APP_BASE %>assets/favicon/favicon-<%= ENV_CONFIG.ENV %>.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="<%= APP_BASE %>css/validationEngine.jquery.css">
+  <link rel="stylesheet" href="<%= APP_BASE %>css/font-awesome.css">
+  <link rel="stylesheet" href="<%= APP_BASE %>css/bootstrap.css">
+  <script type="text/javascript" src="<%= APP_BASE %>js/jquery/jquery.js"></script>
+  <script type="text/javascript" src="<%= APP_BASE %>js/jquery/jquery.livequery.js"></script>
+  <script type="text/javascript" src="<%= APP_BASE %>js/tether/tether.min.js"></script>
+  <script type="text/javascript" src="<%= APP_BASE %>js/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<%= APP_BASE %>js/jquery/jquery.validationEngine.js"></script>
+  <script type="text/javascript" src="<%= APP_BASE %>js/jquery/jquery.validationEngine-es.js"></script>
+  <script type="text/javascript" src="<%= APP_BASE %>js/xtensions/x-general.js"></script>
+
+
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body>
+
+  <sd-app>
+    <section class="loading">
+      <section class="imag">
+        <img src="assets/images/loading.gif" alt="">
+      </section>
+      <article class="text-load">Cargando...</article>
+    </section>
+  </sd-app>
+
+  <script defer>
+  </script>
+
+  <script>
+  // Fixes undefined module function in SystemJS bundle
+  function module() {}
+  </script>
+
+  <!-- shims:js -->
+  <!-- endinject -->
+
+  <% if (BUILD_TYPE === 'dev') { %>
+  <script src="<%= APP_BASE %>app/system-config.js"></script>
+  <% } %>
+
+  <!-- libs:js -->
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <!-- endinject -->
+
+  <% if (BUILD_TYPE === 'dev') { %>
+  <script>
+  System.import('<%= BOOTSTRAP_MODULE %>')
+    .catch(function (e) {
+      console.error(e.stack || e,
+        'Not expecting this error? Report it at https://github.com/mgechev/angular-seed/issues');
+    });
+  </script>
+  <% } %>
+
+
+</body>
+</html>
